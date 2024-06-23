@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: url('https://images.unsplash.com/photo-1503455637927-730bce8583c0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            margin: 0;
+            padding: 0;
+        
+        }
+        .before-scroll{
+            background-image: url(https://picsum.photos/1200/800?image=575);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 0;
+            background-size: cover;
+            background-position: center;
+
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #scrollButton {
+            border: none;
+            background: none;
+            left: 50%;
+            width: 74px;
+            height: 74px;
+            border-left: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        section {
+            padding: 40px 0;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .project {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .project img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        .project-info {
+            flex: 1;
+        }
+        
+        form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #5c2424;
+            border-radius: 5px;
+        }
+        
+        form .btn {
+            display: inline-block;
+            background-color: #a92c2c;
+            color: #5f5dc2;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 60px 0;
+            }
+            .project {
+                flex-direction: column;
+            }
+            .project img {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* Additional styles and media queries can be added as needed */
+        </style>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+  
+                // Perform form validation here (optional)
+
+                // Example of form submission (dummy)
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let message = document.getElementById('message').value;
+
+                console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+                // You can add further handling such as AJAX requests for real form submission
+            });
+            
+
+        </script>
+</head>
+<body>
+    <div class="before-scroll">
+        <header>
+         <div class="container">
+            <img src="DSC_0253.JPG" alt="Professional Photo" class="avatar">
+            <h1>Welcome to My Portfolio</h1>
+            <p><strong>Hello, I'm Ashish Kumar, currently a thrid-year Mechanical Engineering student.</strong></p>
+            <div class="content">
+            <button id="scrollButton"></button>
+            </div>
+         </div>
+        </header>
+    </div>
+    
+<div id="afterScroll">
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="WhatsApp Image 2024-06-09 at 21.55.30.jpeg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1 Title</h3>
+                    <p><strong>Hackstack 2024 Gym Registration Project</strong>
+                        <br>
+
+                        Step into the future of gym registration with Hackstack 2024. Designed and developed by Ashish Kumar, this project showcases a seamless blend of HTML, CSS to create an intuitive and visually appealing registration process for fitness enthusiasts. Experience modern web development firsthand as you explore interactive forms, responsive design, and secure payment integration—all crafted to elevate user experience and streamline administrative tasks. Join us in revolutionizing the way gyms interact with their members. Hackstack 2024: Where innovation meets functionality in web development. </p>
+                    <a href="as.html" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                <strong>Background:</strong>
+                <br>
+                My name is Ashish Kumar, and I am currently a second-year Mechanical Engineering student at IIT Guwahati. I come from Haryana, India, from a middle-class family background. Growing up, I developed a keen interest in technology and its applications.
+                <br><br>
+                
+                <strong>Skills:</strong>
+                <br> 
+                1. HTML, CSS, JavaScript (JS) <br>
+                2. React.js <br>
+                3. Data Structures and Algorithms <br>
+                4. AI/ML
+                <br><br>
+                <strong>Interests:</strong> <br>
+                
+                <b>AI/ML</b>
+                <br><br>
+                <strong>Additional Information:</strong>  <br>
+                I am driven by a strong motivation to apply my skills and knowledge to contribute meaningfully to the field of technology and engineering. As I continue my journey at IIT Guwahati, I look forward to expanding my expertise in both mechanical engineering and software development, with a particular focus on leveraging AI/ML to address complex challenges. If you have any specific questions or projects you'd like to discuss, feel free to reach out!.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required="">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required=""></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>©️ 2024 Ashish Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('scrollButton').addEventListener('click', function () {
+            document.getElementById('afterScroll').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body></html>
